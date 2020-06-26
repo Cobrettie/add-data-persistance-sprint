@@ -1,0 +1,20 @@
+{
+  "name": "add-data-persistance-sprint",
+  "version": "1.0.0",
+  "description": "**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cobrettie/add-data-persistance-sprint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cobrettie/add-data-persistance-sprint/issues"
+  },
+  "homepage": "https://github.com/Cobrettie/add-data-persistance-sprint#readme"
+}
