@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Cobrettie/add-data-persistance-sprint/issues"
   },
-  "homepage": "https://github.com/Cobrettie/add-data-persistance-sprint#readme"
+  "homepage": "https://github.com/Cobrettie/add-data-persistance-sprint#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "knee": "0.0.7",
+    "sqlite3": "^4.2.0"
+  }
 }
