@@ -7,20 +7,20 @@ exports.seed = function(knex) {
       return knex('project').insert([
         {
           id: 1, 
-          project_name: '',
-          project_description: '',
+          project_name: 'test1',
+          project_description: 'tester1',
           completed: false
         },
         {
           id: 2, 
-          project_name: '',
-          project_description: '',
+          project_name: 'tester2',
+          project_description: 'tester2',
           completed: false
         },
         {
           id: 3, 
-          project_name: '',
-          project_description: '',
+          project_name: 'tester33',
+          project_description: 'tester33',
           completed: false
         },
       ]);
