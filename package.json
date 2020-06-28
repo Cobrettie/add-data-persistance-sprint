@@ -4,8 +4,7 @@
   "description": "**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no testspecified\" && exit 1",
-    
+    "test": "echo \"Error: no testspecified\" && exit 1"
   },
   "repository": {
     "type": "git",
