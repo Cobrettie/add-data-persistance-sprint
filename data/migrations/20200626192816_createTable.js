@@ -9,7 +9,9 @@ exports.up = async function(knex) {
     
   await knex.schema.createTable('resource', table => {
     table.increments('id')
-    table.string('resource_name').notNullable()
+    table.string('resource_name')
+      // .unique()
+      .notNullable()
     table.string('resource_description')
     table.integer('project_id')
       .references('id')
