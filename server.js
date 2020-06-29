@@ -1,10 +1,14 @@
 const express = require('express');
-const mvpAPI = require('./mvpAPI/mvpAPI');
+const projects = require('./routers/projects');
+const resources = require('./routers/resources');
+const tasks = require('./routers/tasks');
 
 const server = express();
 
 server.use(express.json());
-server.use('/api', mvpAPI);
+server.use('/api/projects', projects);
+server.use('/api/resources', resources);
+server.use('/api/tasks', tasks)
 
 server.get('/', (req, res) => {
   res.status(200).json({
