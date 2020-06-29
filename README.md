@@ -18,9 +18,9 @@ In this project you will be given a set of requirements and must design a databa
 
 A `project` is what needs to be done. We want to store the following data about a `project`:
 
-- [ ] a unique ID.
-- [ ] a name. This column is required.
-- [ ] a description.
+- [x] a unique ID.
+- [x] a name. This column is required.
+- [x] a description.
 - [ ] a boolean that indicates if the project has been completed. This column cannot be NULL, the default value should be `false`.
 
 A `resource` is anything needed to complete a project, some examples are: a person, a tool, a meeting room or a software license. We want to store the following data about a `resource`:
@@ -95,7 +95,7 @@ In your solution, it is essential that you follow best practices and produce cle
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-- [ ] Add an endpoint to get a list of project resources.
+- [x] Add an endpoint to get a list of project resources.
 - [ ] Add an endpoint to get a list of project tasks.
 - [ ] Add an endpoint to see all projects using a particular resource.
 - [ ] Add support for assigning `resources` directly to `tasks` in addition to adding them to `projects`
