@@ -4,7 +4,8 @@ module.exports = {
   addProject,
   getProjects,
   getProjectById,
-  getProjectResources
+  getProjectResources,
+  getProjectTasks
 }
 
 // Create a Project
@@ -22,9 +23,15 @@ function getProjectById(id) {
   return db('project').where({ id }).first();
 }
 
+
+//// STRETCH METHODS ////
+
 // Get project resources
 function getProjectResources(id) {
-  return db('r.id', 'r.resource_name', 'r.resource_description', 'r.project_id')
-    .from('resource as r')
-    .where('r.project_id', id)
+  return db('resource').where('resource.project_id', id)
+}
+
+// Get project tasks
+function getProjectTasks(id) {
+  return db('task').where('task.project_id', id)
 }

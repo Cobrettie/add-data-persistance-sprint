@@ -48,4 +48,14 @@ router.get('/:id/resources', async (req, res) => {
   }
 })
 
+// get project tasks
+router.get('/:id/tasks', async (req, res) => {
+  try {
+    const tasks = await projectsModel.getProjectTasks(req.params.id);
+    res.status(200).json(tasks)
+  } catch (err) {
+    logError(err)
+  }
+})
+
 module.exports = router;
