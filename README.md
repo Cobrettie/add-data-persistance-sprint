@@ -71,7 +71,7 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Your finished project must include all of the following requirements:
 
-- [ ] Design the data model and use _knex migrations_ to create the database and tables needed to satisfy the following business rules:
+- [x] Design the data model and use _knex migrations_ to create the database and tables needed to satisfy the following business rules:
   - [x] a `project` can have multiple `tasks`.
   - [x] a `task` belongs to only one `project`.
   - [x] a `project` can use multiple `resources`. Example of `resources` are: computer, conference room, microphone, delivery van.
@@ -81,7 +81,7 @@ Your finished project must include all of the following requirements:
   - [x] when adding a `task` the client must provide a description, the notes are optional.
   - [x] when adding a `task` the client must provide the `id` of an existing project.
   - [x] for `projects` and `tasks` if no value is provided for the `completed` property, the API should provide a default value of `false`.
-- [ ] Build an API with endpoints for:
+- [x] Build an API with endpoints for:
   - [x] adding resources.
   - [x] retrieving a list of resources.
   - [x] adding projects.

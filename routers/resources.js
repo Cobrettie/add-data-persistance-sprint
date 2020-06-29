@@ -7,32 +7,35 @@ function logError(err) {
 }
 
 // add a new resource
-router.post('/', (req, res) => {
-  resource.addResource(req.body)
-    .then(() => {
-      res.status(201).json({
-        message: 'Added resource'
-      })
+router.post('/', async (req, res) => {
+  try {
+    const resource = await resource.addResource(req.body)
+    res.status(201).json({
+      message: 'Added resource'
     })
-    .catch(err => logError(err))
+  } catch (err) {
+    logError(err)
+  }
 })
 
 // get all resources
-router.get('/', (req, res) => {
-  resource.getResources()
-    .then(resources => {
-      res.status(201).json(resources)
-    })
-    .catch(err => logError(err))
+router.get('/', async (req, res) => {
+  try {
+    const resources = await resource.getResources()
+    res.status(201).json(resources)
+  } catch (err) {
+    logError(err)
+  }
 })
 
 // get resource by id
-router.get('/:id', (req, res) => {
-  resource.getResourceById(req.params.id)
-    .then(resource => {
-      res.status(200).json(resource)
-    })
-    .catch(err => logError(err))
+router.get('/:id', async (req, res) => {
+  try {
+    const resource = await resource.getResourceById(req.params.id)
+    res.status(200).json(resource)
+  } catch (err) {
+    logError(err)
+  }
 })
 
 module.exports = router;
