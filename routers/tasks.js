@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
 // get all tasks
 router.get('/', async (req, res) => {
   try {
-    const allTasks = await tasks.getTasks()
+    const allTasks = await tasks.getAllTasks()
     res.status(201).json(allTasks)
   } catch (err) {
     logError(err)
