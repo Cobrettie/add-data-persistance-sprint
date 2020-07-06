@@ -48,11 +48,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain the difference between `Relational Databases` and `SQL`.
 
+  - Relational databases store data. SQL is a language used to manage that database/data
+
 2. Why do tables need a `primary key`?
+
+  - By having a primary key, you are able to modify each row, without altering other rows in the same table
 
 3. What is the name given to a table column that references the primary key on another table.
 
+  - Foreign key
+
 4. What do we need in order to have a _many to many_ relationship between two tables.
+
+  - We need an intermediary table that holds foreign keys that reference the primary key on the related tables. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -104,6 +112,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete after receiving your pull-request

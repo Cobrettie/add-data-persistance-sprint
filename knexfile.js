@@ -7,6 +7,13 @@ module.exports = {
     connection: {
       filename: './data/project.db3'
     },
+    // needed when using foreign keys
+    pool: {
+      afterCreate: (conn, done) => {
+        // runs after a connection is made to the sqlite engine
+        conn.run('PRAGMA foreign_keys = ON', done); // turn on FK enforcement
+      },
+    },
     useNullAsDefault: true,
     migrations: {
       directory: './data/migrations'
