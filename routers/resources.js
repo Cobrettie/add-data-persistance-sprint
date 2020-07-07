@@ -9,7 +9,7 @@ function logError(err) {
 // add a new resource
 router.post('/', async (req, res) => {
   try {
-    const resource = await resource.addResource(req.body)
+    const resources = await resource.addResource(req.body)
     res.status(201).json({
       message: 'Added resource'
     })
