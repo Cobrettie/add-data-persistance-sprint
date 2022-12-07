@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Cobrettie/add-data-persistance-sprint#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "helmet": "^3.23.3",
     "knee": "0.0.7",
     "knex": "^0.21.1",
